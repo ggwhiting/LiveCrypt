@@ -17,10 +17,10 @@ public class CipherManager {
 
 
 	public void probe() throws Exception {
-		this.ciphers = Security.getAlgorithms("Mac");
+		this.mac = Security.getAlgorithms("Mac");
 		this.ciphers = Security.getAlgorithms("Cipher");
-                this.ciphers = Security.getAlgorithms("Signature");
-                this.ciphers = Security.getAlgorithms("MessageDigest");
+                this.signatures = Security.getAlgorithms("Signature");
+                this.messageDigests = Security.getAlgorithms("MessageDigest");
 	}
 
 	public String[] getCiphers() throws Exception { 
