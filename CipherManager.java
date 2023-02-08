@@ -17,7 +17,7 @@ public class CipherManager {
 
 
 	public void probe() throws Exception {
-		this.mac = Security.getAlgorithms("Mac");
+		this.macs = Security.getAlgorithms("Mac");
 		this.ciphers = Security.getAlgorithms("Cipher");
                 this.signatures = Security.getAlgorithms("Signature");
                 this.messageDigests = Security.getAlgorithms("MessageDigest");
